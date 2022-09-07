@@ -65,13 +65,18 @@ def chatbot_response(msg):
 
 
 msg = ""
-game = true
-print("Hello")
+game = True
+
+print("Type Below to Begin. If you would like to stop, type stop")
 while game:
     print()
-    print(getResponse(ints, intents))
+    msg = input()
+    if msg == "stop":
+      game = False
+      break
     print()
     print(chatbot_response(msg))
+    
     
     
         
